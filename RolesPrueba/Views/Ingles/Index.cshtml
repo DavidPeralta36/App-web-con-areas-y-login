@@ -1,0 +1,66 @@
+﻿@model RolesPrueba.Models.CuestionariosViewModel
+<h1>Bienvenido @ViewData["empleado"]</h1>
+
+<h3>Cuestionarios de el area de @ViewData["area"]</h3>
+
+<form asp-controller="Sistemas" asp-action="Cuestionario" >
+    <div class="form-group">
+        <label for="cuestionarios">Seleccionar Cuestionario:</label>
+        <div class="d-flex">
+            <select id="cuestionarios" name="idCuestionario" class="form-control">
+                @foreach (var cuestionario in Model.Cuestionarios)
+                {
+                    <option value="@cuestionario.IdCuestionario">@cuestionario.Titulo</option>
+                }
+            </select>
+            <button type="submit" class="btn btn-primary">Ver detalles</button>
+        </div>
+        
+    </div>
+    
+    <div class="buttons">
+        <a class="btn btn-outline-dark mt-5" asp-route-IdCuestionario="" asp-controller="Sistemas" asp-action="AgregarCuestionario">Agregar un nuevo cuestionario a la base de datos</a>
+    </div>
+</form>
+
+<h2>Lista de cuestionarios</h2>
+
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cuestionario</th>
+            <th>Descripcion</th>
+            <th>Fecha de creacion</th>
+        </tr>
+    </thead>
+
+
+    @foreach (var item in Model.Cuestionarios)
+    {
+        <tr>
+            <td>
+                @item.IdCuestionario
+            </td>
+            <td>
+                @item.Titulo
+            </td>
+            <td>
+                @item.Descripcion
+            </td>
+            <td>
+                @item.FechaCreacion
+            </td>
+            <td class="d-flex">
+                <div class="btn btn-outline-dark customLink">
+                    <a class="customLink" asp-action="EditarCuestionario" asp-route-IdCuestionario="@item.IdCuestionario">Editar</a>
+                </div>
+                <div class="btn btn-danger text-light">
+                <a class="customLink " asp-action="EliminarCuestionarios" asp-route-IdCuestionario="@item.IdCuestionario">Eliminar</a>
+                </div>
+            </td>
+        </tr>
+    }
+
+</table>

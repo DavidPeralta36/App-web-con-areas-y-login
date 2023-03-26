@@ -1,0 +1,212 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RolesPrueba
+build_property.RootNamespace = RolesPrueba
+build_property.ProjectDir = C:\Users\david\source\repos\RolesPrueba\RolesPrueba\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\david\source\repos\RolesPrueba\RolesPrueba
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/AgregarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEFncmVnYXJDdWVzdGlvbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/AgregarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEFncmVnYXJQcmVndW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/AgregarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEFncmVnYXJSZXNwdWVzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/Cuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEN1ZXN0aW9uYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/EditarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEVkaXRhckN1ZXN0aW9uYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/EditarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEVkaXRhclByZWd1bnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/EditarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEVkaXRhclJlc3B1ZXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/EliminarCuestionarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEVsaW1pbmFyQ3Vlc3Rpb25hcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/EliminarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEVsaW1pbmFyUHJlZ3VudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/EliminarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEVsaW1pbmFyUmVzcHVlc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Geografia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VvZ3JhZmlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/AgregarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcQWdyZWdhckN1ZXN0aW9uYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/AgregarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcQWdyZWdhclByZWd1bnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/AgregarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcQWdyZWdhclJlc3B1ZXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/Cuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcQ3Vlc3Rpb25hcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/EditarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRWRpdGFyQ3Vlc3Rpb25hcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/EditarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRWRpdGFyUHJlZ3VudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/EditarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRWRpdGFyUmVzcHVlc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/EliminarCuestionarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRWxpbWluYXJDdWVzdGlvbmFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/EliminarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRWxpbWluYXJQcmVndW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/EliminarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRWxpbWluYXJSZXNwdWVzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Historia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/AgregarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEFncmVnYXJDdWVzdGlvbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/AgregarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEFncmVnYXJQcmVndW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/AgregarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEFncmVnYXJSZXNwdWVzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/Cuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEN1ZXN0aW9uYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/EditarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEVkaXRhckN1ZXN0aW9uYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/EditarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEVkaXRhclByZWd1bnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/EditarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEVkaXRhclJlc3B1ZXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/EliminarCuestionarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEVsaW1pbmFyQ3Vlc3Rpb25hcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/EliminarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEVsaW1pbmFyUHJlZ3VudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/EliminarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEVsaW1pbmFyUmVzcHVlc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Ingles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/AgregarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcQWdyZWdhckN1ZXN0aW9uYXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/AgregarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcQWdyZWdhclByZWd1bnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/AgregarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcQWdyZWdhclJlc3B1ZXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/Cuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcQ3Vlc3Rpb25hcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/EditarCuestionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcRWRpdGFyQ3Vlc3Rpb25hcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/EditarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcRWRpdGFyUHJlZ3VudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/EditarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcRWRpdGFyUmVzcHVlc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/EliminarCuestionarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcRWxpbWluYXJDdWVzdGlvbmFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/EliminarPregunta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcRWxpbWluYXJQcmVndW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/EliminarRespuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcRWxpbWluYXJSZXNwdWVzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Sistemas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVtYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/source/repos/RolesPrueba/RolesPrueba/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x6qe91gpnc

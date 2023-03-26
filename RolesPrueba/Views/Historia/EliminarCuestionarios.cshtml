@@ -1,0 +1,80 @@
+﻿@model DbConection.Cuestionarios
+
+
+<h1 class="">¿Eliminar?</h1>
+
+<dl class="mt-3">
+    <dd>
+        <h2 class="text-dark">
+            Id del cuestionario
+        </h2>
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.IdCuestionario)
+        </h5>
+
+    </dd>
+    <dd>
+        <h2 class="text-dark">
+            Titulo
+        </h2>
+
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.Titulo)
+        </h5>
+
+    </dd>
+    <dd>
+        <h2 class="text-dark">
+            Descripcion
+        </h2>
+
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.Descripcion)
+        </h5>
+
+    </dd>
+    <dd>
+        <h2 class="text-dark">
+            Fecha de creacion
+        </h2>
+
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </h5>
+
+    </dd>
+    <dd>
+        <h2 class="text-dark">
+            Id del area al que pertenece
+        </h2>
+
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.id_area)
+        </h5>
+
+    </dd>
+
+</dl>
+
+<form asp-action="EliminarCuestionarioss">
+    <input type="hidden" asp-for="IdCuestionario" />
+    <input type="submit" value="Eliminar cuestionario" class="btn btn-danger" />
+    <div>
+        <a class="btn btn-warning text-dark" href="@Url.Action("Index", "Historia", new { puesto = @ViewData["puesto"],empleado = @ViewData["empleado"],area = @ViewData["area"] })">Volver a la página principal</a>
+    </div>
+</form>
+
+@if (ViewBag.AlertMessage != null)
+{
+    <script>swal("Cuidado!", "@ViewBag.AlertMessage", "warning");</script>
+}

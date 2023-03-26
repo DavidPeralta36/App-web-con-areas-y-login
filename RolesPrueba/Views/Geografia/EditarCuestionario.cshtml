@@ -1,0 +1,38 @@
+﻿@model DbConection.Cuestionarios
+
+@{
+    var puesto = ViewData["puesto"];
+    var url = Url.Action("Index", "Geografia", new { puesto = puesto, empleado = @ViewData["empleado"], area = @ViewData["area"] });
+}
+
+<div>
+    <h2 class="mb-4 mt-5">Editar cuestionario</h2>
+
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr class="m-3">
+                <td class="">Titulo</td>
+                <td>@Html.EditorFor(model => model.Titulo, new { htmlAttributes = new { @class = "form-control", placeholder = "Eje. Titulo" } })</td>
+            </tr>
+            <tr class="m-3">
+                <td class="">Descripcion</td>
+                <td>@Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control", placeholder = "Eje. Descripcion"} })</td>
+            </tr>
+            <tr class="m-3">
+                <td class="">Id de area</td>
+                <td>@Html.EditorFor(model => model.id_area, new { htmlAttributes = new { @class = "form-control", placeholder = "Eje. Id Area" } })</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Editar Registro" class="btn btn-success" />
+                    <a class="btn btn-warning text-dark" href="@url">Volver a la página principal</a>
+                </td>
+            </tr>
+        </table>
+    }
+
+</div>
+
+

@@ -1,0 +1,34 @@
+﻿@model DbConection.Preguntas
+
+<h1 class="h1">Agregar una nueva pregunta</h1>
+
+<h4 class="h4">Pregunta:</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AgregarPregunta">
+            <div class="form-group">
+                <label class="control-label ">IdPregunta</label>
+                <input asp-for="IdPregunta" class="form-control" placeholder="@ViewData["Pregunta"]" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">IdCuestionario</label>
+                <input asp-for="IdCuestionario" class="form-control" placeholder="@ViewData["IdCuestionario"]" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Pregunta</label>
+                <input asp-for="Pregunta" class="form-control" placeholder="Eje. ¿Ser o no ser?" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">RespuestaCorrecta</label>
+                <input asp-for="RespuestaCorrecta" class="form-control" placeholder="Siser" />
+            </div>
+            <div class="form-group mt-3 mb-2">
+                <input type="submit" value="Agregar pregunta" class="btn btn-primary" />
+            </div>
+            <a class="btn btn-warning text-dark" href="@Url.Action("Cuestionario", "Ingles", new { idCuestionario = Convert.ToInt32(ViewData["IdCuestionario"]) })">Volver a la página principal</a>
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+C:\Users\david\source\repos\RolesPrueba\DbConection\bin\Debug\DbConection.dll.config
+C:\Users\david\source\repos\RolesPrueba\DbConection\bin\Debug\DbConection.dll
+C:\Users\david\source\repos\RolesPrueba\DbConection\bin\Debug\DbConection.pdb
+C:\Users\david\source\repos\RolesPrueba\DbConection\bin\Debug\EntityFramework.dll
+C:\Users\david\source\repos\RolesPrueba\DbConection\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\david\source\repos\RolesPrueba\DbConection\bin\Debug\EntityFramework.xml
+C:\Users\david\source\repos\RolesPrueba\DbConection\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\david\source\repos\RolesPrueba\DbConection\obj\Debug\DbConection.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\RolesPrueba\DbConection\obj\Debug\DbConection.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\RolesPrueba\DbConection\obj\Debug\DbConection.csproj.CopyComplete
+C:\Users\david\source\repos\RolesPrueba\DbConection\obj\Debug\DbConection.dll
+C:\Users\david\source\repos\RolesPrueba\DbConection\obj\Debug\DbConection.pdb

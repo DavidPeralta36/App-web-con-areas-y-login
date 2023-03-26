@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="App.Config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DbConection\DbConection.csproj" />
+    <ProjectReference Include="..\Negocio\Negocio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App.Config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

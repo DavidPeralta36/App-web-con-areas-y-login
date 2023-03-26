@@ -1,0 +1,54 @@
+﻿@model DbConection.Respuestas
+
+
+<h1 class="text-light">¿Eliminar respuesta?</h1>
+
+
+<h3 class="text-light">¿Esta seguro de querer eliminar la respuesta?</h3>
+
+<dl class="mt-3">
+    <dd>
+        <h2 class="text-dark">
+            Id de la respuesta
+        </h2>
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.IdRespuesta)
+        </h5>
+
+    </dd>
+    <dd>
+        <h2 class="text-dark">
+            Id de la pregunta
+        </h2>
+
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.IdPregunta)
+        </h5>
+
+    </dd>
+    <dd>
+        <h2 class="text-dark">
+            Respuesta
+        </h2>
+
+    </dd>
+    <dd class="col-sm-10">
+        <h5 class=" form-control">
+            @Html.DisplayFor(model => model.Respuesta)
+        </h5>
+
+    </dd>
+</dl>
+
+<form asp-action="EliminarRespuestaa">
+    <input type="hidden" asp-for="IdRespuesta" />
+    <input type="submit" value="Eliminar respuesta" class="btn btn-danger" />
+    <div>
+        <a class="btn btn-warning text-dark" href="@Url.Action("Cuestionario", "Historia", new { idCuestionario = Convert.ToInt32(@ViewData["IdCuestionario"]) })">Volver a la página principal</a>
+    </div>
+</form>
+

@@ -1,0 +1,15 @@
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\Negocio.dll
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\Negocio.pdb
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\DbConection.dll
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\DbConection.pdb
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\DbConection.dll.config
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\david\source\repos\RolesPrueba\Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\david\source\repos\RolesPrueba\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\RolesPrueba\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\RolesPrueba\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\david\source\repos\RolesPrueba\Negocio\obj\Debug\Negocio.dll
+C:\Users\david\source\repos\RolesPrueba\Negocio\obj\Debug\Negocio.pdb

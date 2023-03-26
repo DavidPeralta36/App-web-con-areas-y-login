@@ -1,0 +1,30 @@
+﻿@model DbConection.Respuestas
+
+<h1 class="h1">Agregar una respuesta</h1>
+
+<h4 class="h4">Respuesta:</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AgregarRespuesta">
+            <div class="form-group">
+                <label class="control-label ">Id Respuesta</label>
+                <input asp-for="IdRespuesta" class="form-control" placeholder="@ViewData["Respuesta"]" />
+            </div>
+            <div class="form-group">
+                <label class="control-label ">Id Pregunta</label>
+                <input asp-for="IdPregunta" class="form-control" placeholder="@ViewData["IdPregunta"]" />
+            </div>
+            <div class="form-group">
+                <label class="control-label ">Respuesta:</label>
+                <input asp-for="Respuesta" class="form-control" placeholder="Eje. Respuesta" />
+            </div>
+            <div class="form-group mt-3 mb-2">
+                <input type="submit" value="Agregar respuesta" class="btn btn-primary" />
+            </div>
+            <a class="btn btn-warning text-dark" href="@Url.Action("Cuestionario", "Sistemas", new { idCuestionario = Convert.ToInt32(@ViewData["IdCuestionario"]) })">Volver a la página principal</a>
+        </form>
+
+    </div>
+
+</div>

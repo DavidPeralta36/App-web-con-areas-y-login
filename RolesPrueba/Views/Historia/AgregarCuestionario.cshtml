@@ -1,0 +1,41 @@
+﻿@model DbConection.Cuestionarios
+
+<h1 class="h1">Agregar un nuevo cuestionario</h1>
+
+<h4 class="h4">Cuestionario:</h4>
+
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AgregarCuestionario">
+            <div class="form-group">
+                <label class="control-label ">Id del cuestionario</label>
+                <input asp-for="IdCuestionario" class="form-control" placeholder="@ViewData["Mensaje"]" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Titulo</label>
+                <input asp-for="Titulo" class="form-control" placeholder="Eje. Cuestionario de programación." />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Descripcion</label>
+                <input asp-for="Descripcion" class="form-control" placeholder="Eje. Descripcion del cuestionario" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Fecha de creacion</label>
+                <input asp-for="FechaCreacion" class="form-control" placeholder="Eje. 2022-02-01" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Id de Area</label>
+                <input asp-for="id_area" class="form-control" placeholder="Eje. 1-Sistemas 2-Inges 3-Historia 4-Geografia" />
+            </div>
+            <div class="form-group mt-3 mb-2">
+                <input type="submit" value="Agregar cuestionario." class="btn btn-primary" />
+            </div>
+            <a class="btn btn-warning text-dark" href="@Url.Action("Index", "Historia", new { puesto = @ViewData["puesto"],empleado = @ViewData["empleado"],area = @ViewData["area"] })">Volver a la página principal</a>
+        </form>
+
+    </div>
+
+</div>

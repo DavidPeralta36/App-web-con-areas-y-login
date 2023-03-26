@@ -1,0 +1,24 @@
+﻿@model DbConection.Respuestas
+
+<div>
+    <h2 class="mb-4 mt-5">Editar cuestionario @ViewData["IdCuestionario"]</h2>
+
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr class="m-3">
+                <td class="text-dark">Respuesta</td>
+                <td>@Html.EditorFor(model => model.Respuesta, new { htmlAttributes = new { @class = "form-control", placeholder = "Eje. respuesta" } })</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Editar respuesta" class="btn btn-success" />
+                    <a class="btn btn-warning text-dark" href="@Url.Action("Cuestionario", "Historia", new { idCuestionario = Convert.ToInt32(@ViewData["IdCuestionario"]) })">Volver a la página principal</a>
+                </td>
+            </tr>
+        </table>
+    }
+</div>
+
+

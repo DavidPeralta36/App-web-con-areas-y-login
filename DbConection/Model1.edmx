@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RolesPruebaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Areas">
+          <Key>
+            <PropertyRef Name="IdAreas" />
+          </Key>
+          <Property Name="IdAreas" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Cuestionarios">
+          <Key>
+            <PropertyRef Name="IdCuestionario" />
+          </Key>
+          <Property Name="IdCuestionario" Type="int" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="255" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="255" />
+          <Property Name="FechaCreacion" Type="date" />
+          <Property Name="id_area" Type="int" />
+        </EntityType>
+        <EntityType Name="Preguntas">
+          <Key>
+            <PropertyRef Name="IdPregunta" />
+          </Key>
+          <Property Name="IdPregunta" Type="int" Nullable="false" />
+          <Property Name="IdCuestionario" Type="int" />
+          <Property Name="Pregunta" Type="varchar" MaxLength="255" />
+          <Property Name="RespuestaCorrecta" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Respuestas">
+          <Key>
+            <PropertyRef Name="IdRespuesta" />
+          </Key>
+          <Property Name="IdRespuesta" Type="int" Nullable="false" />
+          <Property Name="IdPregunta" Type="int" />
+          <Property Name="Respuesta" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IdUsuarios" />
+          </Key>
+          <Property Name="IdUsuarios" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="correo" Type="varchar" MaxLength="50" />
+          <Property Name="contrasena" Type="varchar" MaxLength="50" />
+          <Property Name="id_area" Type="int" />
+        </EntityType>
+        <Association Name="FK__Cuestiona__id_ar__3F466844">
+          <End Role="Areas" Type="Self.Areas" Multiplicity="0..1" />
+          <End Role="Cuestionarios" Type="Self.Cuestionarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Areas">
+              <PropertyRef Name="IdAreas" />
+            </Principal>
+            <Dependent Role="Cuestionarios">
+              <PropertyRef Name="id_area" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Preguntas__IdCue__4222D4EF">
+          <End Role="Cuestionarios" Type="Self.Cuestionarios" Multiplicity="0..1" />
+          <End Role="Preguntas" Type="Self.Preguntas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuestionarios">
+              <PropertyRef Name="IdCuestionario" />
+            </Principal>
+            <Dependent Role="Preguntas">
+              <PropertyRef Name="IdCuestionario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Respuesta__IdPre__44FF419A">
+          <End Role="Preguntas" Type="Self.Preguntas" Multiplicity="0..1" />
+          <End Role="Respuestas" Type="Self.Respuestas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Preguntas">
+              <PropertyRef Name="IdPregunta" />
+            </Principal>
+            <Dependent Role="Respuestas">
+              <PropertyRef Name="IdPregunta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Usuarios__id_are__3C69FB99">
+          <End Role="Areas" Type="Self.Areas" Multiplicity="0..1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Areas">
+              <PropertyRef Name="IdAreas" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="id_area" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RolesPruebaModelStoreContainer">
+          <EntitySet Name="Areas" EntityType="Self.Areas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cuestionarios" EntityType="Self.Cuestionarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Preguntas" EntityType="Self.Preguntas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Respuestas" EntityType="Self.Respuestas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Cuestiona__id_ar__3F466844" Association="Self.FK__Cuestiona__id_ar__3F466844">
+            <End Role="Areas" EntitySet="Areas" />
+            <End Role="Cuestionarios" EntitySet="Cuestionarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Preguntas__IdCue__4222D4EF" Association="Self.FK__Preguntas__IdCue__4222D4EF">
+            <End Role="Cuestionarios" EntitySet="Cuestionarios" />
+            <End Role="Preguntas" EntitySet="Preguntas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Respuesta__IdPre__44FF419A" Association="Self.FK__Respuesta__IdPre__44FF419A">
+            <End Role="Preguntas" EntitySet="Preguntas" />
+            <End Role="Respuestas" EntitySet="Respuestas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Usuarios__id_are__3C69FB99" Association="Self.FK__Usuarios__id_are__3C69FB99">
+            <End Role="Areas" EntitySet="Areas" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RolesPruebaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Areas">
+          <Key>
+            <PropertyRef Name="IdAreas" />
+          </Key>
+          <Property Name="IdAreas" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Cuestionarios" Relationship="Self.FK__Cuestiona__id_ar__3F466844" FromRole="Areas" ToRole="Cuestionarios" />
+          <NavigationProperty Name="Usuarios" Relationship="Self.FK__Usuarios__id_are__3C69FB99" FromRole="Areas" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Cuestionarios">
+          <Key>
+            <PropertyRef Name="IdCuestionario" />
+          </Key>
+          <Property Name="IdCuestionario" Type="Int32" Nullable="false" />
+          <Property Name="Titulo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
+          <Property Name="id_area" Type="Int32" />
+          <NavigationProperty Name="Areas" Relationship="Self.FK__Cuestiona__id_ar__3F466844" FromRole="Cuestionarios" ToRole="Areas" />
+          <NavigationProperty Name="Preguntas" Relationship="Self.FK__Preguntas__IdCue__4222D4EF" FromRole="Cuestionarios" ToRole="Preguntas" />
+        </EntityType>
+        <EntityType Name="Preguntas">
+          <Key>
+            <PropertyRef Name="IdPregunta" />
+          </Key>
+          <Property Name="IdPregunta" Type="Int32" Nullable="false" />
+          <Property Name="IdCuestionario" Type="Int32" />
+          <Property Name="Pregunta" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="RespuestaCorrecta" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Cuestionarios" Relationship="Self.FK__Preguntas__IdCue__4222D4EF" FromRole="Preguntas" ToRole="Cuestionarios" />
+          <NavigationProperty Name="Respuestas" Relationship="Self.FK__Respuesta__IdPre__44FF419A" FromRole="Preguntas" ToRole="Respuestas" />
+        </EntityType>
+        <EntityType Name="Respuestas">
+          <Key>
+            <PropertyRef Name="IdRespuesta" />
+          </Key>
+          <Property Name="IdRespuesta" Type="Int32" Nullable="false" />
+          <Property Name="IdPregunta" Type="Int32" />
+          <Property Name="Respuesta" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Preguntas" Relationship="Self.FK__Respuesta__IdPre__44FF419A" FromRole="Respuestas" ToRole="Preguntas" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IdUsuarios" />
+          </Key>
+          <Property Name="IdUsuarios" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="contrasena" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id_area" Type="Int32" />
+          <NavigationProperty Name="Areas" Relationship="Self.FK__Usuarios__id_are__3C69FB99" FromRole="Usuarios" ToRole="Areas" />
+        </EntityType>
+        <Association Name="FK__Cuestiona__id_ar__3F466844">
+          <End Role="Areas" Type="Self.Areas" Multiplicity="0..1" />
+          <End Role="Cuestionarios" Type="Self.Cuestionarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Areas">
+              <PropertyRef Name="IdAreas" />
+            </Principal>
+            <Dependent Role="Cuestionarios">
+              <PropertyRef Name="id_area" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Usuarios__id_are__3C69FB99">
+          <End Role="Areas" Type="Self.Areas" Multiplicity="0..1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Areas">
+              <PropertyRef Name="IdAreas" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="id_area" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Preguntas__IdCue__4222D4EF">
+          <End Role="Cuestionarios" Type="Self.Cuestionarios" Multiplicity="0..1" />
+          <End Role="Preguntas" Type="Self.Preguntas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuestionarios">
+              <PropertyRef Name="IdCuestionario" />
+            </Principal>
+            <Dependent Role="Preguntas">
+              <PropertyRef Name="IdCuestionario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Respuesta__IdPre__44FF419A">
+          <End Role="Preguntas" Type="Self.Preguntas" Multiplicity="0..1" />
+          <End Role="Respuestas" Type="Self.Respuestas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Preguntas">
+              <PropertyRef Name="IdPregunta" />
+            </Principal>
+            <Dependent Role="Respuestas">
+              <PropertyRef Name="IdPregunta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RolesPruebaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Areas" EntityType="Self.Areas" />
+          <EntitySet Name="Cuestionarios" EntityType="Self.Cuestionarios" />
+          <EntitySet Name="Preguntas" EntityType="Self.Preguntas" />
+          <EntitySet Name="Respuestas" EntityType="Self.Respuestas" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+          <AssociationSet Name="FK__Cuestiona__id_ar__3F466844" Association="Self.FK__Cuestiona__id_ar__3F466844">
+            <End Role="Areas" EntitySet="Areas" />
+            <End Role="Cuestionarios" EntitySet="Cuestionarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Usuarios__id_are__3C69FB99" Association="Self.FK__Usuarios__id_are__3C69FB99">
+            <End Role="Areas" EntitySet="Areas" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Preguntas__IdCue__4222D4EF" Association="Self.FK__Preguntas__IdCue__4222D4EF">
+            <End Role="Cuestionarios" EntitySet="Cuestionarios" />
+            <End Role="Preguntas" EntitySet="Preguntas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Respuesta__IdPre__44FF419A" Association="Self.FK__Respuesta__IdPre__44FF419A">
+            <End Role="Preguntas" EntitySet="Preguntas" />
+            <End Role="Respuestas" EntitySet="Respuestas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RolesPruebaModelStoreContainer" CdmEntityContainer="RolesPruebaEntities">
+          <EntitySetMapping Name="Areas">
+            <EntityTypeMapping TypeName="RolesPruebaModel.Areas">
+              <MappingFragment StoreEntitySet="Areas">
+                <ScalarProperty Name="IdAreas" ColumnName="IdAreas" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cuestionarios">
+            <EntityTypeMapping TypeName="RolesPruebaModel.Cuestionarios">
+              <MappingFragment StoreEntitySet="Cuestionarios">
+                <ScalarProperty Name="IdCuestionario" ColumnName="IdCuestionario" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="id_area" ColumnName="id_area" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Preguntas">
+            <EntityTypeMapping TypeName="RolesPruebaModel.Preguntas">
+              <MappingFragment StoreEntitySet="Preguntas">
+                <ScalarProperty Name="IdPregunta" ColumnName="IdPregunta" />
+                <ScalarProperty Name="IdCuestionario" ColumnName="IdCuestionario" />
+                <ScalarProperty Name="Pregunta" ColumnName="Pregunta" />
+                <ScalarProperty Name="RespuestaCorrecta" ColumnName="RespuestaCorrecta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Respuestas">
+            <EntityTypeMapping TypeName="RolesPruebaModel.Respuestas">
+              <MappingFragment StoreEntitySet="Respuestas">
+                <ScalarProperty Name="IdRespuesta" ColumnName="IdRespuesta" />
+                <ScalarProperty Name="IdPregunta" ColumnName="IdPregunta" />
+                <ScalarProperty Name="Respuesta" ColumnName="Respuesta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="RolesPruebaModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="IdUsuarios" ColumnName="IdUsuarios" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+                <ScalarProperty Name="id_area" ColumnName="id_area" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

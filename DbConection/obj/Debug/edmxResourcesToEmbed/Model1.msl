@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RolesPruebaModelStoreContainer" CdmEntityContainer="RolesPruebaEntities">
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="RolesPruebaModel.Areas">
+        <MappingFragment StoreEntitySet="Areas">
+          <ScalarProperty Name="IdAreas" ColumnName="IdAreas" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cuestionarios">
+      <EntityTypeMapping TypeName="RolesPruebaModel.Cuestionarios">
+        <MappingFragment StoreEntitySet="Cuestionarios">
+          <ScalarProperty Name="IdCuestionario" ColumnName="IdCuestionario" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="id_area" ColumnName="id_area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Preguntas">
+      <EntityTypeMapping TypeName="RolesPruebaModel.Preguntas">
+        <MappingFragment StoreEntitySet="Preguntas">
+          <ScalarProperty Name="IdPregunta" ColumnName="IdPregunta" />
+          <ScalarProperty Name="IdCuestionario" ColumnName="IdCuestionario" />
+          <ScalarProperty Name="Pregunta" ColumnName="Pregunta" />
+          <ScalarProperty Name="RespuestaCorrecta" ColumnName="RespuestaCorrecta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respuestas">
+      <EntityTypeMapping TypeName="RolesPruebaModel.Respuestas">
+        <MappingFragment StoreEntitySet="Respuestas">
+          <ScalarProperty Name="IdRespuesta" ColumnName="IdRespuesta" />
+          <ScalarProperty Name="IdPregunta" ColumnName="IdPregunta" />
+          <ScalarProperty Name="Respuesta" ColumnName="Respuesta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="RolesPruebaModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="IdUsuarios" ColumnName="IdUsuarios" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="id_area" ColumnName="id_area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

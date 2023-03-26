@@ -1,0 +1,74 @@
+﻿@using (Html.BeginForm("ValidarRespuestas", "Geografia", FormMethod.Post, new { id = "formRespuestas" }))
+{
+    @foreach (var pregunta in Model.Preguntas)
+    {
+        <h2>@pregunta.Pregunta</h2>
+        <ul>
+            @foreach (var respuesta in pregunta.Respuestas)
+            {
+                <li>
+                    <label>
+                        <input type="radio" name="@pregunta.IdPregunta" value="@respuesta.IdRespuesta" onchange="console.log('Respuesta seleccionada: ' + this.value)" />
+                        @respuesta.Respuesta
+                    </label>
+                    <div class="d-flex">
+                        <div class="btn btn-outline-dark customLink">
+                            <a class="customLink" asp-action="EditarRespuesta" asp-route-IdCuestionario="@Model.Cuestionario.IdCuestionario" asp-route-IdRespuesta="@respuesta.IdRespuesta">Editar</a>
+                        </div>
+                        <div class="btn btn-danger text-light">
+                            <a class="customLink " asp-action="EliminarRespuesta" asp-route-IdCuestionario="@Model.Cuestionario.IdCuestionario" asp-route-IdRespuesta="@respuesta.IdRespuesta">Eliminar</a>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+
+    <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+    <a class="btn btn-outline-primary" asp-area="" asp-controller="Sistemas" asp-action="AgregarPregunta" asp-route-IdCuestionario="@Model.Cuestionario.IdCuestionario">Agregar una nueva pregunta.</a>
+    <a class="btn btn-warning text-dark" href="@Url.Action("Index", "Geografia", new { puesto = Model.puesto, empleado = Model.empleado, area= Model.area})">Volver a la página principal</a>
+
+}
+
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cuestionario</th>
+            <th>Pregunta</th>
+            <th>Respuesta Correcta</th>
+        </tr>
+    </thead>
+
+
+    @foreach (var item in Model.Preguntas)
+    {
+        <tr>
+            <td>
+                @item.IdPregunta
+            </td>
+            <td>
+                @item.IdCuestionario
+            </td>
+            <td>
+                @item.Pregunta
+            </td>
+            <td>
+                @item.RespuestaCorrecta
+            </td>
+            <td class="d-flex">
+                <div class="btn btn-outline-dark customLink">
+                    <a class="customLink" asp-action="EditarPregunta" asp-route-IdCuestionario="@Model.Cuestionario.IdCuestionario" asp-route-IdPregunta="@item.IdPregunta">Editar</a>
+                </div>
+                <div class="btn btn-danger text-light">
+                    <a class="customLink " asp-action="EliminarPregunta" asp-route-IdCuestionario="@Model.Cuestionario.IdCuestionario" asp-route-IdPregunta="@item.IdPregunta">Eliminar</a>
+                </div>
+                <div class="btn btn-primary text-light">
+                    <a class="customLink" asp-controller="Sistemas" asp-route-IdCuestionario="@Model.Cuestionario.IdCuestionario" asp-action="AgregarRespuesta" asp-route-IdPregunta="@item.IdPregunta">Agregar una nueva respuesta</a>
+                </div>
+            </td>
+        </tr>
+    }
+
+</table>
